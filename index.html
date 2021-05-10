@@ -1,160 +1,405 @@
 <!DOCTYPE html>
+<!-- TELL THE BROWSER THAT WE'RE OPENING HTML FILE -->
 <html lang="en">
+<!-- html ~~ ROUT ELEMENT OF HTML  lang ~~ LANGUAGE -->
 <head>
+<!-- head ~~ CAN'T BEEN SEEN IN BROWSER -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOTER</title>
-    <link rel="stylesheet" href="06_flex_home_about copy.css">
+    <!-- viewport ~~ THE AREA WHERE YOU CAN SEE IN THE BROWSER -->
+    <!-- device-width ~~ THE WIDTH SHOULD BE IQUAL TO THE DEVICE WIDTH -->
+    <!-- <meta> name="author" content="coco" -->
+    <!-- THIS IS ADDITIONAL TO SHOW THE AUTHOR -->
+    <title>Home | Coffee Bean</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@700&display=swap" rel="stylesheet"> -->
+    <!-- FONT HTMLにLINKか、CSSに＠import する！ -->
 </head>
 <body>
+    <!-- WEBSITE IS COMPLEADED (BOOK)
+    WEPAGE IS A PAGE A CURRENT PARE YOU SEE (A PAGE) -->
     <div class="wrapper">
 
-        <!-- NAV -->
-        <div class="nav">
-            <!-- nav-slide -->
-            <nav id="mySidenav" class="global-nav">
-                <ul class="global-nav__list">
-                <li class="global-nav__item"><a href="#">HOME</a></li>
-                <li class="global-nav__item"><a href="#">ABOUT</a></li>
-                <li class="global-nav__item"><a href="#">SEARVICE</a></li>
-                <li class="global-nav__item"><a href="#">GALLERY</a></li>
+        <!-- Header Area -->
+        <header>
+            <nav class="nav">
+                <h1><a href="#">Coffee Bean</a></h1>
+                <!-- h1 = THE MOST IMPORTANT HEADING name of your shop -->
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
-            <!-- nav-logo -->
-            <a href="#"><img src="0_images/nipo_chan_darkgreen-12.png" alt=""></a>
-            <!-- nav-hamburger -->
-            <div class="hamburger" id="js-hamburger" onclick="openNav()">
-                <span class="hamburger__line hamburger__line--1"></span>
-                <span class="hamburger__line hamburger__line--2"></span>
-                <span class="hamburger__line hamburger__line--3"></span>
-            </div>
-        </div>
-    
-        <!-- ABOUT -->
-        <div class="about">
-            <div class="about-1">
-                <h1>ABOUT</h1>
-            </div>
-            <div class="about-boxs">
-                <div class="about-2">
-                    <div class="icon"></div>
-                </div>
-                <div class="about-3">
-                    <div class="icon"></div>
-                </div>
-                <div class="about-4">
-                    <div class="icon"></div>
-                </div>
-                <div class="about-5">
-                    <div class="icon"></div>
-                </div>
-            </div>
-        </div>
 
-        <!-- BG-1 -->
-        <div class="bg-1"></div>
+            <!-- Banner Area -->
+            <section class="banner">
+                <div class="banner-text">
+                    <!-- <i></i> ~~ used for out of prose, different voice -->
+                    <!-- <p>The word <i>the</i> is an article.</p> -->
+                    <!-- <em></em> ~~ used to emphasize words -->
+                    <!-- <p>He was <i>shocked</i> when he heard the news.</p> -->
+                    <!-- <cite></cite> ~~ used for titles -->
+                    <!-- <h1><cite>To Kill A Mockingbird</cite></h1> -->
 
-        <!-- SERVICE -->
-        <div class="service">
-            <div class="service-boxs">
-                <div class="service-2">
-                    <div class="icon"></div>
+                    <h2>Uniquely Fresh <span>Taste</span></h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, est!</p>
+                    <!-- p>lorem10 -->
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="service-3">
-                    <div class="icon"></div>
-                </div>
-                <div class="service-4">
-                    <div class="icon"></div>
-                </div>
-                <div class="service-5">
-                    <div class="icon"></div>
-                </div>
-            </div>
-            <div class="service-1">
-                <h1>SERVICE</h1>
-            </div>
-        </div>
+            </section>
+        </header>
 
-        <!-- BG-2 -->
-        <div class="bg-2"></div>
+        <!-- Ads Area -->
+        <section class="ads">
+            <div class="ads-box ads-item1">
+            <!-- .ads-box.ads-item1 -->
+            <!-- ads-box ~~ for simirarity THEY HAVE THE SAME WIDTH AND HEIGHT TEXT  -->
+            <!-- ads-item 1/2 ~~ for differences -->
+                <div class="ads-text">
+                    <h3>New Coffee Flavours</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ads-box ads-item2">
+                <div class="ads-text">
+                    <h3>This Friday 25% off</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>            
+        </section>
+        
+        <!-- Merchandise Area -->
+        <section class="merch">
+            <div class="div-title">
+            <!-- 他のAreaでも同じフォントを使用するから div-title で統一     -->
+                <span>What Happens Here</span>
+                <!-- id and span are "non-semantic"
+                id ~~ GROUP ELEMENTS ~~ Block = occupy from left to right
+                span ~~ GROUP TEXTS ~~ Inline = occupy nessesary area -->
+                <h2>Coffee House Aerchandise</h2>
+                <hr> <!-- horizontal rule -->
+            </div>
+            <div class="merch-gallery">
+                <div class="merch-item item1">
+                    <img src="img/product1.jpg" alt="Photo of product 1 Paper Pouch"> <!-- alt is for screen readers -->
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item2">
+                    <img src="img/product2.jpg" alt="Photo of product 2">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item3">
+                    <img src="img/product3.jpg" alt="Photo of product 3">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item4">
+                    <img src="img/product4.jpg" alt="Photo of product 4">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item5">
+                    <img src="img/product5.jpg" alt="Photo of product 5">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item6">
+                    <img src="img/product6.jpg" alt="Photo of product 6">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item7">
+                    <img src="img/product7.jpg" alt="Photo of product 7">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item8">
+                    <img src="img/product8.jpg" alt="Photo of product 8">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+            </div>
+        </section>
 
-        <!-- GALLERY -->
-        <div class="gallery">
-            <div class="gallery-boxs-1">
-                <div class="gallery-2">
-                    <div class="box box-2"></div>
-                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
-                </div>
-                <div class="gallery-3">
-                    <div class="box box-3"></div>
-                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
-                </div>
+        <!-- Ads Big Area -->
+        <section class="ads-big">
+        <!-- DIFFERENT STYLING = DIFFERENT CLASS -->
+            <div class="ads-big-text">
+                <span>What happends here</span>
+                <h2>This Friday 25% off & Special Gift</h2>
+                <a href="#">Read More</a>
             </div>
-            <div class="gallery-1">
-                <h1>GALLERY</h1>
-            </div>
-            <div class="gallery-boxs-2">
-                <div class="gallery-4">
-                    <div class="box box-4"></div>
-                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
-                </div>
-                <div class="gallery-5">
-                    <div class="box box-5"></div>
-                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!-- FOOTER -->
-        <div class="footer">
+        <!-- Merchandise Sale Area -->
+        <section class="merch">
+            <div class="div-title">
+                <span>What Happens Here</span>
+                <h2>Merchandise Sale</h2>
+                <hr>
+            </div>
+            <div class="merch-gallery">
+                <div class="merch-item item1">
+                    <img src="img/product1.jpg" alt="Photo of product 1 Paper Pouch"> <!-- alt is for screen readers -->
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item2">
+                    <img src="img/product2.jpg" alt="Photo of product 2">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item3">
+                    <img src="img/product3.jpg" alt="Photo of product 3">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+                <div class="merch-item item4">
+                    <img src="img/product4.jpg" alt="Photo of product 4">
+                    <h3>Paper Pouch</h3>
+                    <span>*****</span>
+                    <p>$71.00</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ads Area  -->
+        <section class="ads">
+            <div class="ads-box ads-item3">
+                <div class="ads-text">
+                    <h3>New Coffee Flavours</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ads-box ads-item4">
+                <div class="ads-text">
+                    <h3>New Coffee Shop</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ads-box ads-item5">
+                <div class="ads-text">
+                    <h3>Free Taste Coffee</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="ads-box ads-item6">
+                <div class="ads-text">
+                    <h3>Fresh Coffee Beans</h3>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Area -->
+        <section class="reservation">
+            <div class="div-title">
+                <h2>Reservation Form</h2>
+                <hr>
+            </div>
+            <div class="res-form">
+                <form action="#" method="POST">
+                    <div class="left">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" placeholder="FirstName LastName" required >
+                        <!-- name ~~ for backend the value of the "full-name" is "Kokoro Ishii" -->
+                        <!-- the label for="full-name" and id="full-name" should be the same! -->
+                        <!-- <label>
+                            Full Name
+                            <input type="text" name="full-name" maxlength="20" minlength="10">
+                        </label> -->
+                        <br>
+                        <label for="emali">Email</label>
+                        <input type="email" name="email" id="email" placeholder="mail@mail.com" required>
+                        <br>
+                        <label for="phone-num">Phone Number</label>
+                        <input type="tel" name="phone-num" id="phone-num" placeholder="293-1373" pattern="[0-9]{3}-[0-9]{4}" required> <!-- 293-1373 123-4567 -->
+                        <br>
+                        <label for="red-details">Reservation Details</label>
+                        <select name="red-details" id="red-details">
+                            <option value="1person">1 Person Table</option>
+                            <option value="2person">2 Person Table</option>
+                            <option value="3person">3 Person Table</option>
+                        </select>
+                        <!-- <label for="genre">Genre</label>
+                        <input type="text" name="genre" id="genre" list="genreList">
+                        <datalist id="genreList">
+                            <option value="Pop">POP MUSIC</option>
+                            <option value="Rock">ROCK MUSIC</option>
+                            <option value="Soul">SOUL MUSIC</option>
+                            <option value="R&B">R&B MUSIC</option>
+                        </datalist> -->
+                        <br>
+                        <label for="res-date">Reservation Date</label>
+                        <input type="date" name="res-date" id="res-date">
+                        <!-- min="2020-06-27" max="2020-12-31" -->
+                        <br>
+                        <input type="radio" name="time" id="am" value="morning">
+                        <label for="am" class="one-line">Morning</label>
+                        <input type="radio" name="time" id="pm" value="afternoon">
+                        <label for="pm" class="one-line">Afternoon</label>
+                    </div>
+                    <div class="right">
+                        <label for="request">Additional Requests</label>
+                        <textarea name="request" id="request" cols="30" rows="10" placeholder="Enter your requests" ></textarea>
+
+                        <br>
+
+                        <h3>Payment</h3>
+                        <p>Payment Accepted Cards</p>
+                        <span>Cards</span>
+
+                        <br>
+                        <label for="name-card">Full Name</label>
+                        <input type="text" name="name-card" id="name-card" placeholder="John Doe" required>
+                        <br>
+                        <label for="cc-num">Credit Card Number</label>
+                        <!-- input type="number" name=""id="" -->
+                        <input type="tel" name="cc-num" id="cc-num" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="4111-1111-1111-1111"> 
+                        <br>
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="dgree" class="one-line">I agree to the torms of use</label>
+                        <br>
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer1 Area -->
+        <footer class="footer1">
             <div class="footer-content">
-                <h3>Duis aute irure dolor in reprehenderit in voluptate dolore eu fugiat nulla<br>
-                    pariatur. Excepteur sint occaecat cupidatat non proident, officia erunt mollit anim id est laborum.</h3>
-                <div class="footer-menu">
-                    <div class="footer-home">
-                        <h4>Home</h4>
-                        <p>Exceteur sint octcupt.</p>
-                        <p>Exceteur s non proident.</p>
-                    </div>
-                    <div class="footer-about">
-                        <h4>About us</h4>
-                        <p>Exceteur sint octcupt.</p>
-                        <p>Exceteur s non proident.</p>
-                    </div>
-                    <div class="footer-service">
-                        <h4>Service</h4>
-                        <p>Exceteur sint octcupt.</p>
-                        <p>Exceteur s non proident.</p>
-                    </div>
-                    <div class="footer-gallery">
-                        <h4>Gallery</h4>
-                        <p>Exceteur sint octcupt.</p>
-                        <p>Exceteur s non proident.</p>
-                    </div>
+                <article class="opening">
+                    <h3>Opening Hours</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>..........</th>
+                                <th>Available</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>..........</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>..........</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Wednes</td>
+                                <td>..........</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>..........</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>..........</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>..........</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>..........</td>
+                                <td>09:00-22:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <article class="latest-post">
+                    <h3>Latest Post</h3>
+
+                    <h4>Expand your mind, change everything</h4>
+                    <p>14.02.2020</p>
+                    
+                    <h4>Places to get lost</h4>
+                    <p>07.03.2018</p>
+
+                    <h4>Lewis Howes</h4>
+                    <p>21.03.2018</p>
+
+                    <h4>Elevate your expectations</h4>
+                    <p>01.04.2018</p>
+                </article>
+                <article class="contact">
+                    <h3>Contact Us</h3>
+
+                    <p class="change-color">info@coffeebean.com</p> <!-- email -->
+                    <p>1-444-123-4559</p><!-- tel -->
+                    <p>Raymond Boulevard 244, New York</p><!-- address -->
+
+                    <h3 class="title2">The last standard post</h3>
+                    
+                    <form action="#" method="GET">
+                        <input type="search" name="search" id="search">
+                        <input type="submit" value="Search" id="search-btn">
+                    </form>
+                </article>
+                <article class="location">
+                    <h3>Other Locations</h3>
+
+                    <h4>Coffee Bean Philippines</h4>
+                    <p>1234 IT Park</p>
+                    <p>Cebu City</p>
+
+                    <h4>Coffee Bean Tokyo</h4>
+                    <p>151 Shibuya City</p>
+                    <p>Tokyo, Japan</p>
+                </article>
+            </div>
+        </footer>
+
+        <!-- Footer2 Area -->
+        <footer class="footer2">
+            <div class="footer-content">
+                <div class="logo">
+                    <h2>Coffee Bean</h2>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.twitter.com/coffeebean">Twitter</a></li>
+                        <li><a href="https://www.twitter.com/coffeebean">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/coffeebean">Facebook</a></li>
+                        <li><a href="https://www.twitter.com/coffeebean">Tumblr</a></li>
+                        <li><a href="https://www.twitter.com/coffeebean">Linked In</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p> &copy; 2020 All Rights Reserved</p>
+                    <!-- &nbsp;    - non-breaking space = make the spaces with &nbsp; -->
+                    <!-- &emsp;    - emphasis space = wider space -->
+                    <!-- &ensp;    - normal; normal space -->
                 </div>
             </div>
-            <!-- BACK BUTTON -->
-            <a id="back-to-top" href="#" class="on">
-                <div class="but">
-                    B
-                </div>
-            </a>
-        </div>
-
-        <!-- NAV -->
-        <script>
-            function toggleNav() {
-                var body = document.body;
-                var hamburger = document.getElementById('js-hamburger');
-    
-                hamburger.addEventListener('click', function() {
-                    body.classList.toggle('nav-open');
-                });
-            }
-            toggleNav();
-          </script>
-
-
+        </footer>
     </div>
 </body>
 </html>
