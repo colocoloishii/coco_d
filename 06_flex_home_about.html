@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTER</title>
+    <link rel="stylesheet" href="06_flex_home_about copy.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- NAV -->
+        <div class="nav">
+            <!-- nav-slide -->
+            <nav id="mySidenav" class="global-nav">
+                <ul class="global-nav__list">
+                <li class="global-nav__item"><a href="#">HOME</a></li>
+                <li class="global-nav__item"><a href="#">ABOUT</a></li>
+                <li class="global-nav__item"><a href="#">SEARVICE</a></li>
+                <li class="global-nav__item"><a href="#">GALLERY</a></li>
+                </ul>
+            </nav>
+            <!-- nav-logo -->
+            <a href="#"><img src="0_images/nipo_chan_darkgreen-12.png" alt=""></a>
+            <!-- nav-hamburger -->
+            <div class="hamburger" id="js-hamburger" onclick="openNav()">
+                <span class="hamburger__line hamburger__line--1"></span>
+                <span class="hamburger__line hamburger__line--2"></span>
+                <span class="hamburger__line hamburger__line--3"></span>
+            </div>
+        </div>
+    
+        <!-- ABOUT -->
+        <div class="about">
+            <div class="about-1">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="about-boxs">
+                <div class="about-2">
+                    <div class="icon"></div>
+                </div>
+                <div class="about-3">
+                    <div class="icon"></div>
+                </div>
+                <div class="about-4">
+                    <div class="icon"></div>
+                </div>
+                <div class="about-5">
+                    <div class="icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BG-1 -->
+        <div class="bg-1"></div>
+
+        <!-- SERVICE -->
+        <div class="service">
+            <div class="service-boxs">
+                <div class="service-2">
+                    <div class="icon"></div>
+                </div>
+                <div class="service-3">
+                    <div class="icon"></div>
+                </div>
+                <div class="service-4">
+                    <div class="icon"></div>
+                </div>
+                <div class="service-5">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="service-1">
+                <h1>SERVICE</h1>
+            </div>
+        </div>
+
+        <!-- BG-2 -->
+        <div class="bg-2"></div>
+
+        <!-- GALLERY -->
+        <div class="gallery">
+            <div class="gallery-boxs-1">
+                <div class="gallery-2">
+                    <div class="box box-2"></div>
+                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
+                </div>
+                <div class="gallery-3">
+                    <div class="box box-3"></div>
+                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
+                </div>
+            </div>
+            <div class="gallery-1">
+                <h1>GALLERY</h1>
+            </div>
+            <div class="gallery-boxs-2">
+                <div class="gallery-4">
+                    <div class="box box-4"></div>
+                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
+                </div>
+                <div class="gallery-5">
+                    <div class="box box-5"></div>
+                    <img src="images/スクリーンショット 2020-06-22 21.49.48.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-content">
+                <h3>Duis aute irure dolor in reprehenderit in voluptate dolore eu fugiat nulla<br>
+                    pariatur. Excepteur sint occaecat cupidatat non proident, officia erunt mollit anim id est laborum.</h3>
+                <div class="footer-menu">
+                    <div class="footer-home">
+                        <h4>Home</h4>
+                        <p>Exceteur sint octcupt.</p>
+                        <p>Exceteur s non proident.</p>
+                    </div>
+                    <div class="footer-about">
+                        <h4>About us</h4>
+                        <p>Exceteur sint octcupt.</p>
+                        <p>Exceteur s non proident.</p>
+                    </div>
+                    <div class="footer-service">
+                        <h4>Service</h4>
+                        <p>Exceteur sint octcupt.</p>
+                        <p>Exceteur s non proident.</p>
+                    </div>
+                    <div class="footer-gallery">
+                        <h4>Gallery</h4>
+                        <p>Exceteur sint octcupt.</p>
+                        <p>Exceteur s non proident.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- BACK BUTTON -->
+            <a id="back-to-top" href="#" class="on">
+                <div class="but">
+                    B
+                </div>
+            </a>
+        </div>
+
+        <!-- NAV -->
+        <script>
+            function toggleNav() {
+                var body = document.body;
+                var hamburger = document.getElementById('js-hamburger');
+    
+                hamburger.addEventListener('click', function() {
+                    body.classList.toggle('nav-open');
+                });
+            }
+            toggleNav();
+          </script>
+
+
+    </div>
+</body>
+</html>
